@@ -5,9 +5,23 @@ import java.util.Objects;
 
 public class Film {
 	private int id;
-	private String title;
+	private String title;	
 	private String description;
 	private List<Actor> actors;
+	private int year;
+	private String rating;
+	private String language;
+	
+	public Film(int id, String title, String description, List<Actor> actors, int year, String rating, String language) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.description = description;
+		this.actors = actors;
+		this.year = year;
+		this.rating = rating;
+		this.language = language;
+		}
 	
 	public Film(int id, String title, String description, List<Actor> actors) {
 		super();
@@ -47,6 +61,30 @@ public class Film {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+	public List<Actor> getActors() {
+		return actors;
+	}
+
+	public void setActors(List<Actor> actors) {
+		this.actors = actors;
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public String getRating() {
+		return rating;
+	}
+
+	public void setRating(String rating) {
+		this.rating = rating;
+	}
 
 	@Override
 	public int hashCode() {
@@ -68,6 +106,10 @@ public class Film {
 	@Override
 	public String toString() {
 		return "Film [id=" + id + ", title=" + title + ", description=" + description + ", actors=" + actors + "]";
+	}
+	
+	public void printInfo() {
+		System.out.printf("%nTitle: %s%nYear: %d%nRating: %s%nDescription: %s%nLanguage: %s%nActors: %s%n%n", this.title, this.year, this.rating, this.description, this.language, this.actors);
 	}
 
 	
