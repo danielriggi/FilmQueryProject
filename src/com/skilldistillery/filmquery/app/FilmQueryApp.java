@@ -76,4 +76,11 @@ public class FilmQueryApp {
         System.out.println("3. Exit the application");
         System.out.print("Enter your choice: ");
 	}
+	
+	public void subMenu() {
+        System.out.println("Menu:");
+        System.out.println("1. Return to main menu");
+        System.out.println("2. View all film details");
+        System.out.print("Enter your choice: ");
+	}
 	}
