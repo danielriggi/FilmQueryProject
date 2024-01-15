@@ -12,20 +12,6 @@ User Stories:
 4. Displaying Film Language: Film language is shown along with other details.
 5. Displaying Cast: Users can view the film's cast.
 
-# Usage
-1. **Clone the Repository:**
-    ```bash
-    git clone https://github.com/danielriggi/FilmQueryProject
-    cd FilmQueryProject
-    ```
-
-2. **Compile and Run:**
-    ```
-    javac -d bin -cp src src/com/skilldistillery/filmquery/*.java
-    java -cp bin com.skilldistillery.filmquery.app.FilmQueryApp
-    ```
-    Follow the on-screen instructions to play a blackjack game against the dealer. 
-
 # Tech Used
 - **Programming Languages:**
     - Java 8 (version 1.8.0_391)
@@ -36,3 +22,14 @@ User Stories:
     - Git 2.32.1 (https://git-scm.com/)
 - **Database Management:**
     - MySQL (version 5.7.39)
+
+# Lessons Learned
+1. Establishing Database Connections:
+- Properly configuring and managing database connections is crucial.
+- Always close connections, statements, and result sets to prevent resource leaks.
+2. Using Prepared Statements:
+- Prepared statements help prevent SQL injection and improve performance.
+- Parameterized queries are a safer and more efficient way to interact with databases.
+3. Object-Relational Mapping (ORM)
+ - Applying ORM principles can help in representing database tables as Java objects.
+ - Mapping database entities to Java classes can simplify database interactions and make the code more maintainable.
